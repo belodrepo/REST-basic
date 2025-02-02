@@ -1,4 +1,4 @@
-
+//REST client
 const apiUrl = 'http://localhost:3000/api/users';
 const usersData = document.getElementById('usersData');
 
