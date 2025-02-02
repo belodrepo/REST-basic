@@ -4,6 +4,7 @@ const usersData = document.getElementById('usersData');
 
 async function getUsers() {
     //debugger;
+    try {
     const response = await fetch(apiUrl);
     const users = await response.json();
 
@@ -23,6 +24,11 @@ async function getUsers() {
             </td>
         </tr>
         `).join('');
+    }
+    catch(e) {
+        console.error(e.message);
+        alert('Hiba történt az adatok elérése során!')
+    }
 
 }
 
