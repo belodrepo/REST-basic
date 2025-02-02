@@ -13,7 +13,7 @@ const db = new sqlite3.Database('test.db', (err) => {
 if (err) {
     console.log(err.message);
 } else {
-    console.log('Az adatbázis kapcsolat létrejött');
+    console.log('Az adatbázis kapcsolat létrejött.');
 }
 });
 
